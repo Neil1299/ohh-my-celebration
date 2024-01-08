@@ -1,0 +1,15 @@
+#logo img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+
+   }
+ul li{
+    color:rgb(201,122,5);
+    list-style: none;
+}
+.order:hover{
+    color: black;
+    cursor: pointer;
+}
+
