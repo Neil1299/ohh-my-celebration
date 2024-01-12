@@ -1,7 +1,30 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { MyContext } from '../MyContext'
 
 const AllElement = (props) => {
-    let {image,itemname,price}=props
+  
+    let {id, image,itemname,price}=props
+
+    
+    const {cart, setCart} = useContext(MyContext);
+
+    const addToCart = () =>{
+
+      let prod = {
+        id: id,
+        image: image,
+        itemname: itemname,
+        price: price
+      }
+
+      setCart([...cart, prod]);
+     
+
+
+    }
+
+
+
   return (
     <div className="deals container-fluid bg-light text-center w-25 ">
    
@@ -19,9 +42,10 @@ const AllElement = (props) => {
       </div>
 
       <div className="d-grid gap-2 col-6 mx-auto py-2 ">
-        <button id='port' className=" btn btn-success  text-light bottom border border-light">
+        <button id='port' className=" btn btn-success  text-light bottom border border-light" onClick={addToCart} >
           Buy Now
         </button>
+        
       </div>
     </div>
    

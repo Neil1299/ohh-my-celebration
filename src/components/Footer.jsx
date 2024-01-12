@@ -11,9 +11,9 @@ const Footer = () => {
  </div>
    <p className='ms-5'>Registered Address</p>
    <ul>
-    <li><i class="fa-solid fa-location-dot me-2"></i>D-201 Senapati Bapat Road,High Street Complex BVB Pune 410014</li>
-    <li><i class="fa-solid fa-envelope me-2"></i>order@mycelebration.com</li>
-    <li><i class="fa-solid fa-phone-volume"></i>+91 2025555555</li>
+    <li><i className="fa-solid fa-location-dot me-2"></i>D-201 Senapati Bapat Road,High Street Complex BVB Pune 410014</li>
+    <li><i className="fa-solid fa-envelope me-2"></i>order@mycelebration.com</li>
+    <li><i className="fa-solid fa-phone-volume"></i>+91 2025555555</li>
    </ul>
      </div>
 
@@ -32,9 +32,9 @@ const Footer = () => {
       <h4 className='ms-4 py-3'><u>Stay Updated</u></h4>
       <ul className=' py-2'>
 
-        <li><i class="fa-brands fa-facebook me-2"></i>Facebook</li>
-        <li><i class="fa-brands fa-twitter me-2"></i>Twitter</li>
-        <li> <i class="fa-brands fa-instagram me-2"></i>Instagram</li>
+        <li><i className="fa-brands fa-facebook me-2"></i>Facebook</li>
+        <li><i className="fa-brands fa-twitter me-2"></i>Twitter</li>
+        <li> <i className="fa-brands fa-instagram me-2"></i>Instagram</li>
         
       </ul>
      </div>

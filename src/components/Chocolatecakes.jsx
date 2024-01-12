@@ -1,4 +1,4 @@
-import React from 'react'
+
 import choco1 from '../assets/choco1.webp'
 import choco2 from '../assets/choco2.webp'
 import choco3 from '../assets/choco3.webp'
@@ -13,11 +13,12 @@ import AllElement from './AllElement'
 
 
 const Chocolatecakes = () => {
+
     const chocolateCakes=[
         {
             id: 1,
             image: choco1,
-            itemname: "Fantasy Chocolate Truffle Cake Half Kgs",
+            itemName: "Fantasy Chocolate Truffle Cake Half Kgs",
             price: "Rs.350"
           },
           {
@@ -74,6 +75,9 @@ const Chocolatecakes = () => {
             price: "Rs.650"
           }
     ]
+     
+   
+  
   return (
     <>
     
@@ -89,12 +93,14 @@ const Chocolatecakes = () => {
          image={cake.image}
          itemname={cake.itemname}
          price={cake.price}
+
          />
      ))
  }
              </div>
    </> 
   )
-}
+};
+
 
 export default Chocolatecakes

@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../style/NavBot.css'
 import { Link } from 'react-router-dom'
 const NavBot = () => {
+  // const [count, setCount] = useState('0');
+  // setCount(count+1);
   return (
     
     <nav className=" bottom navbar navbar-expand-lg  sticky-top">
@@ -33,7 +35,7 @@ const NavBot = () => {
            <b>Cakes by Theme</b>
             </Link>
             <ul className="dropdown-menu">
-              <li><Link className="dropdown-item" to="#">2-3 Tier Cakes</Link></li>
+              <li><Link className="dropdown-item" to="/tiercakes">2-3 Tier Cakes</Link></li>
               <li><Link className="dropdown-item" to="#">Cartoon Cakes</Link></li>
               <li><Link className="dropdown-item" to="#">Wedding Cakes</Link></li>
             </ul>
@@ -119,6 +121,9 @@ const NavBot = () => {
           </li>
         </ul>
         
+       
+       <Link to="/addtocart" className='text-dark'> <span><i className="fa-solid fa-cart-shopping me-4 "></i></span> </Link>
+       {/* <span>{count > 0 && <span className="badge bg-danger">{count}</span>}</span> */}
       </div>
     </div>
   </nav>

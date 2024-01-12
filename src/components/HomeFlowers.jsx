@@ -93,7 +93,7 @@ const HomeFlowers = () => {
         <p>New Added Flowers</p>
         <h3 className="bottom">BEAUTIFUL FLOWERS</h3>
       </div>
-      <div id="homeflowers" className="carousel slide vw-100">
+      <div id="homeflowers" className="carousel slide ">
         <div className="carousel-inner">
           {flowerCombos.map((flowers, index) => (
             <div
