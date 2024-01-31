@@ -1,0 +1,6 @@
+.cart{
+    
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
