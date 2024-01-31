@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import '../style/AddToCart.css'
 
 const AddToCart = (props) => {
-  let { id, image, itemname, price } = props;
+  let { id, image, itemname, price,quantity } = props;
   const { cart, setCart } = useContext(MyContext);
   const deleteCart = () => {
     let cartCopy = cart;
-    cartCopy.splice(cart - 1, 1);
+    cartCopy.splice(cart-1,1);
     setCart([...cartCopy]);
   };
  
@@ -18,6 +18,7 @@ const AddToCart = (props) => {
       image: image,
       itemname: itemname,
       price: price,
+      quantity:quantity
     };
 
     setCart([...cart, prod]);
@@ -29,7 +30,7 @@ const AddToCart = (props) => {
       <div className="container min-vh-75 cart">
       
         <table class="table">
-          {cart.length == 0 ? "Your cart is empty" : ""}
+          {cart.length === 0 ? "Your cart is empty" : ""}
           <thead>
             <tr >
               {/* <th scope="col">Id</th> */}
@@ -51,7 +52,7 @@ const AddToCart = (props) => {
                   />
                 </td>
                 <td>{item.itemname}</td>
-                <td><select name="" id="">
+                <td><select name="" id="" value={item.quantity}>
                   <option value="">1</option>
                   <option value="">2</option>
                   <option value="">3</option>
@@ -71,7 +72,7 @@ const AddToCart = (props) => {
           </tbody>
         </table>
       </div>
-      )
+      
     </div>
   );
             }

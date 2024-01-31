@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { MyContext } from "../MyContext";
 import { Link } from "react-router-dom";
 
@@ -32,7 +32,7 @@ const AllElement = (props) => {
         </div>
 
         <div className="d-grid gap-2 col-6 mx-auto py-2 ">
-         <Link to="/addtocart"> <button
+         <Link to="#"> <button
             id="port"
             className=" btn btn-success  text-light bottom border border-light"
             onClick={addToCart}

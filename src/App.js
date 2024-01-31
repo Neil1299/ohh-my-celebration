@@ -14,7 +14,8 @@ import AddToCart from './components/AddToCart.jsx';
 import MangoCakes from './components/MangoCakes.jsx';
 import FlowerAndChoco from './components/FlowerAndChoco.jsx';
 import WeddingCakes from './components/WeddingCakes.jsx';
-// import BuyNow from './components/BuyNow.jsx';
+import BuyNow from './components/BuyNow.jsx';
+
 
 // import AllElement from './components/AllElement.jsx';
 
@@ -22,11 +23,12 @@ import WeddingCakes from './components/WeddingCakes.jsx';
 function App() {
 
   const [cart, setCart] = useState([]);
+  const [buy, setBuy] = useState([]);
   return (
    <>
   <BrowserRouter>
 
-  <MyContext.Provider value={{cart, setCart}}>
+  <MyContext.Provider value={{cart, setCart,buy,setBuy}}>
 
   <NavBar/>
   <Routes>
@@ -39,11 +41,11 @@ function App() {
     <Route path='/mangocakes' element={<MangoCakes/>} />
     <Route path='/flowerandchoco' element={<FlowerAndChoco/>} />
     <Route path='/weddingcakes' element={<WeddingCakes/>} />
-    {/* <Route path='/buynow' element={<BuyNow/>} /> */}
+    <Route path='/buynow' element={<BuyNow/>} />
+   
   </Routes>
   
   <Footer/>
-  
 
   </MyContext.Provider>
   </BrowserRouter>
